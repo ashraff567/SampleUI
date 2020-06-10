@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="53dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/chirs_hemsworth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:text="User Name"
+        android:textColor="#3A3939"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintStart_toEndOf="@id/userImage"
+        app:layout_constraintTop_toTopOf="@id/userImage" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="24dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="content Description"
+        android:padding="10dp"
+        android:src="@drawable/ic_item_option"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.701" />
+
+    <Button
+        android:id="@+id/btn_members"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_bg"
+        android:elevation="@null"
+        android:stateListAnimator="@null"
+        android:text="Team leader"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="11dp"
+        app:layout_constraintStart_toStartOf="@id/tvUserName"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName" />
+
+    <Button
+        android:id="@+id/btn_task"
+        android:layout_width="60dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="#FF99FFE9"
+        android:elevation="@null"
+        android:stateListAnimator="@null"
+        android:text="4 tasks"
+        android:textSize="11dp"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toEndOf="@id/btn_members"
+        app:layout_constraintTop_toTopOf="@id/btn_members" />
+
+    <Button
+        android:id="@+id/btn_per"
+        android:layout_width="35dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/btn_bg"
+        android:backgroundTint="#FF99F5"
+        android:elevation="@null"
+        android:stateListAnimator="@null"
+        android:text="10%"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="11dp"
+        app:layout_constraintStart_toEndOf="@id/btn_members"
+        app:layout_constraintTop_toTopOf="@id/btn_members" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
